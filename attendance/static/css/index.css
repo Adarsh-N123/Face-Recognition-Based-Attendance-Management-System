@@ -1,0 +1,64 @@
+.container{
+    width:350px;
+    height:550px;
+    border-radius:20px;
+    /* background-color: white; */
+    margin-top:10vh;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    
+}
+h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+body{
+    background-image: url(https://images.unsplash.com/photo-1586191582151-f73872dfd183?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3wxNzA4Mjc2fHxlbnwwfHx8fA%3D%3D&w=1000&q=80);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+#heading{
+    color:black;
+}
+#username{
+    width:70%;
+    height:30px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+#username{
+    width:70%;
+    height:30px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+#password{
+    width:70%;
+    height:30px;
+    border-radius:5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+#forgot{
+    font-size: 15px;
+    margin-left: -24%;
+}
+#reg{
+    font-size: 15px;
+}
+#login{
+    width: 70%;
+    height:30px;
+    background-color: burlywood;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+}

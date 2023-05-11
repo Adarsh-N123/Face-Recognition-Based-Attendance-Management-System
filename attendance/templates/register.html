@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/css/index.css">
+    </head>
+    <body style="background-color: rgb(28, 26, 26);">
+        <center>
+            <br>
+        
+        <div class="container">
+            <form action="" method="post" name="login">
+                {% csrf_token %}
+                <br>
+                <center><h2 id="heading">Face Recognition Attendance System</h2></center>
+                <hr>
+                <!-- <br> -->
+                <h2>Register</h2>
+                <!-- <br> -->
+                <p style="width:60%">Hey, Enter your details to Signup to your account</p>
+                <input type="text"  name="username" placeholder="username" id="username" required>
+                <br>
+                <br>
+                <input type="password"  name="password" placeholder="password" id="password" required>
+                <br>
+                <br>
+                <input type="email"  name="email" placeholder="email" id="username" required>
+                <br>
+                <br>
+
+                <button type="submit"  name="signup"  id="login">Sign Up</button>
+                <br>
+                <p>---  Or  ---</p>
+                <!-- <br> -->
+                <p id="reg">Already have an account? <a style="text-decoration: none;color:black;" href="{% url 'login' %}"><strong>Sign in</strong></a></p>
+            </form>
+        </div>
+        </center>
+
+    </body>
+
+    
+    {% if error == "Username is already taken" %}
+    <script>
+        alert("Username is already taken")
+        </script>
+    {% endif %}
+    {% if error == "Email is already taken" %}
+    <script>
+        alert("Email is already taken")
+        </script>
+    {% endif %}
+    {% if er == "no" %}
+    <script>
+        alert("User Registered successfully");
+        window.location=("{% url 'login' %}");
+        </script>
+    {% endif %}
+    
+</html>

@@ -1,0 +1,64 @@
+.container{
+    width:350px;
+    height:470px;
+    border-radius:20px;
+    /* background-color: white; */
+    margin-top:10vh;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    
+}
+h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#heading{
+    color:black;
+}
+#username{
+    width:70%;
+    height:30px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+body{
+    background-image: url(https://wallpaperaccess.com/full/1567674.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#username{
+    width:70%;
+    height:30px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+#password{
+    width:70%;
+    height:30px;
+    border-radius:5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+#forgot{
+    font-size: 15px;
+    margin-left: -24%;
+}
+#reg{
+    font-size: 15px;
+}
+#login{
+    width: 70%;
+    height:30px;
+    background-color:chartreuse;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+}

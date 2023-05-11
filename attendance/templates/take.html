@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/css/take.css">
+        <link rel="stylesheet" href="/static/css/timetable.css">
+    </head>
+    <body>
+        <center>
+        
+        <div class="container">
+            
+            <form action="" method="post" name="takeattendance">
+                {% csrf_token %}
+                <br>
+                <h3 style="color:white;">Attendance</h3>
+                <br>
+                <!-- <br>
+                <br> -->
+                <img style="width:60%;height:200px" src="{% url 'video_feed' %}">
+                
+                <br>
+                <!-- <input type="text"  name="rollno" placeholder="Student Roll No" id="username" required> -->
+                <br>
+                <br>
+                
+    
+                <button type="submit"  name="takeat"  id="username">Take</button>
+                <br>
+                <br>
+                <p><a href="{% url 'dashboard' %}" style="text-decoration: none;color:white;">Go to Home</a></p>
+            </form>
+        </div>
+        </center>
+    </body>
+    {% if error == 'data' %}
+    <script>
+        alert('Attendance Taken Successfully');
+    </script>
+    {% endif %}
+    {% if error == 'nodata' %}
+    <script>
+        alert('No class As of Now for the user');
+    </script>
+    {% endif %}
+    {% if error == 'alreadydone' %}
+    <script>
+        alert('Attendance Already taken');
+    </script>
+    {% endif %}
+    {% if error == 'nouser' %}
+    <script>
+        alert('No User Registration found');
+    </script>
+    {% endif %}
+    
+</html>

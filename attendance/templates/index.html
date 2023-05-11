@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/css/index.css">
+    </head>
+    <body style="background-color: rgb(28, 26, 26);">
+        <center>
+            <br>
+        
+        <div class="container">
+            <form action="" method="post" name="login">
+                {% csrf_token %}
+                <br>
+                <center><h2 id="heading">Face Recognition Attendance System</h2></center>
+                <hr>
+                <!-- <br> -->
+                <h2>Login</h2>
+                <!-- <br> -->
+                <p style="width:60%">Hey, Enter your details to login to your account</p>
+                <input type="text"  name="username" placeholder="username" id="username" required>
+                <br>
+                <br>
+                <input type="password"  name="password" placeholder="password" id="password" required>
+                <br>
+                <p id="forgot">Having trouble signing in?</p>
+                <br>
+
+                <button type="submit"  name="login"  id="login">Sign In</button>
+                <br>
+                <p>---  Or  ---</p>
+                <!-- <br> -->
+                <p id="reg">Don't have an account? <a style="text-decoration: none;color:black;" href="{% url 'register' %}"><strong>Request Now</strong></a></p>
+            </form>
+        </div>
+        </center>
+
+    </body>
+
+    {% if error == "yes" %}
+    <script>
+        alert("login unsuccessful")
+        </script>
+    {% endif %}
+    {% if error == "no" %}
+    <script>
+        alert("login successful");
+        window.location = ("{% url 'dashboard' %}");
+        </script>
+    {% endif %}
+    
+</html>
